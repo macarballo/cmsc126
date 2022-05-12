@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Units | UP Mindanao</title>
+    <link rel="stylesheet" href="Academic-Units.css">
+    
+    
+</head>
+<body>
+
+    <div class="container"> <!--RGB Background-->
+        <div class="parallax">
+            <div class="header">
+                <div class="wrapper">
+                    <div class="logo">
+                      <img src="uplogo.png" alt="logo">
+                    </div>
+                    <div class="header-text">
+                      <h1>University of the Philippines</h1>
+                      <h1>Mindanao</h1>
+                    </div>
+                </div>
+                <div class="header-rightCenter">
+                    <a href="HOME.html">Home</a>
+                    <a class="active" href="Academic-Units.html">Academic Units</a>
+                    <a  href="Academic Programs.html">Academic Programs</a>
+                    <a href="signup.html">Sign-up</a>
+                </div>
+            </div>
+        </div>
+        
+    
+        <div class="spacer">
+            <!--White Space-->
+        </div>
+
+        <div class="spacer">
+            <!--White Space-->
+        </div>
+
+        <div class="spacer">
+            <!--White Space-->
+        </div>
+
+        <div class="spacer">
+            <!--White Space-->
+        </div>
+
+        <div class="spacer">
+            <!--White Space-->
+        </div>
+
+        <div class="spacer">
+            <!--White Space-->
+        </div>
+          
+        <h2><b>ACADEMIC UNITS</b></h2>
+        <br>
+        <button class="accordion1">Colleges/School</button>
+        <div class="panel">
+        <br>
+        <p><a href="CHSS.html">College of Humanities and Social Sciences</a></p>
+        <br>
+        <p><a href="CSM.html">College of Science and Mathematics</a></p>
+        <br>
+        <p><a href="SOM.html">School of Management</a></p>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <div class="container1">
+            <h2>COLLEGE</h2>
+            <div class="card" style="width:500px">
+              <img class="card-img-top" src="CHSS.png" alt="Card image" style="width:100%">
+              <div class="card-body">
+                <h4 class="card-title">CHSS :</h4>
+                <p class="card-text">College of Humanities and Social Sciences</p>
+                <a href="https://www2.upmin.edu.ph/index.php/academic-programs-sp-9350/colleges/college-of-humanities-and-social-science" class="btn btn-primary">See Website</a>
+              </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            
+            <div class="container2">
+                <h2>COLLEGE</h2>
+                <div class="card" style="width:500px">
+                  <img class="card-img-top" src="CSM.png" alt="Card image" style="width:100%">
+                  <div class="card-body">
+                    <h4 class="card-title">CSM :</h4>
+                    <p class="card-text">College of Science and Mathematics</p>
+                    <a href="https://www2.upmin.edu.ph/index.php/academic-programs-sp-9350/colleges/college-of-science-and-mathematics" class="btn btn-primary">See Website</a>
+                  </div>
+                </div>
+                <br>
+                <br>
+                <br>
+    
+            <div class="container3">
+                <h2>SCHOOL</h2>
+                <div class="card" style="width:500px">
+                   <img class="card-img-top" src="SOM.png" alt="Card image" style="width:100%">
+                   <div class="card-body">
+                     <h4 class="card-title">SOM :</h4>
+                     <p class="card-text">School of Management</p>
+                     <a href="https://www2.upmin.edu.ph/index.php/academic-programs-sp-9350/colleges/school-of-management" class="btn btn-primary">See Website</a>
+                  </div>
+                </div>
+                <br>
+                <br>
+
+        <div class="spacer">
+            <!--White Space-->
+        </div>
+
+     </div>
+
+     <script>
+        var acc = document.getElementsByClassName("accordion1");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+          });
+        }
+        </script>
+
+</body>
+</html>

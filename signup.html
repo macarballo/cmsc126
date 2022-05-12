@@ -1,0 +1,86 @@
+<!--For Sign-up Webpage-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up | UP Mindanao</title>
+    <link rel="stylesheet" href="signup.css">
+    <!--For icon library-->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!--Necessary links for JQuery-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="http://jqueryui.com/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>  
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>  
+</head>
+<body>
+    <div class="container"> <!--RGB Background-->
+        <div class="parallax">
+            <div class="header">
+                <div class="wrapper">
+                    <div class="logo">
+                      <img src="uplogo.png" alt="logo">
+                    </div>
+                    <div class="header-text">
+                      <h1>University of the Philippines</h1>
+                      <h1>Mindanao</h1>
+                    </div>
+                </div>
+                <div class="header-rightCenter">
+                    <a href="HOME.html">Home</a>
+                    <a href="Academic-Units.html">Academic Units</a>
+                    <a href="Academic Programs.html">Academic Program</a>
+                    <a class="active" href="signup.html">Sign-up</a>
+                </div>
+            </div>
+        </div>
+
+        <!--For input text fields-->
+        <div class="formContainer">
+            <form id="forInput">
+                <h1>Sign-up</h1>
+                <hr class="hrstyle">
+                <br>
+                <!--For Personal Information Input-->
+                <i class="fa fa-user icon fa-2x"></i>
+                <!--<label for="firstName" class="forLabels">First Name:</label>-->
+                <input id="firstName" type="textbox" placeholder="First Name" required>
+                <br><br>
+                <i class="fa fa-user icon fa-2x"></i>
+                <!--<label for="middleName" class="forLabels">Middle Name:</label>-->
+                <input id="middleName" type="textbox" placeholder="Middle Name" required>
+                <br><br>
+                <i class="fa fa-user icon fa-2x"></i>
+                <!--<label for="lastName" class="forLabels">Last Name:</label>-->
+                <input id="lastName" type="textbox" placeholder="Last Name" required>
+                <br><br>
+                <label for="Gender" class="forLabels">Gender:</label>
+                <input type="radio" value="Male" name="Gender" id="maleGender" class="radButton1" required>
+                <label for="maleGender">Male</label>
+                <input type="radio" value="Female" name="Gender" id="femaleGender" class="radButton1" required>
+                <label for="femaleGender">Female</label>
+                <br><br>
+                <i class="fa fa-calendar icon fa-2x" aria-hidden="true"></i>
+                <!--<label for="birthDate" class="forLabels">Date of Birth:</label>-->
+                <input id="birthDate" placeholder="Date of Birth" required>
+                <br><br>
+                <i class="fa fa-map-marker icon fa-3x"></i>
+                <!--<label for="provinceMin" class="forLabels">Province:</label>-->
+                <input type="text" id="provinceMin" placeholder="Province" required>
+                <br><br>
+                <i class="fa fa-university icon fa-2x" aria-hidden="true"></i>
+                <!--<label for="yearLevel" class="forLabels">Year Level:</label>-->
+                <input id="yearLevel" placeholder="Year Level" required>
+                <!--For Submit Button-->
+                <div class="btn-box">
+                    <button onclick="submitButton()" type="submit" class="button">Submit</button>
+                </div>
+                <hr class="hrstyle1">
+            </form>
+        </div>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>
